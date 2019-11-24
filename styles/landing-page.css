@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Miriam+Libre&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    background: #6ba8a9;
+}
+
+.top-part {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+img {
+    width: 150px;
+}
+
+.box-form {
+    margin: 0 auto;
+    width: 20rem;
+    max-width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background: #393e46;
+    text-align: center;
+}
+
+.box-form h2 {
+    color: white;
+    text-transform: uppercase;
+}
+
+.form-element {
+    border: 0;
+    background: none;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid #29a19c;
+    padding: 10px 10px;
+    width: 12rem;
+    outline: none;
+    color: white;
+    transition: 0.20s;
+    font-size: 1rem;
+
+}
+
+.form-element:focus {
+    padding: 10px 30px;
+}
+
+input[type="submit"] {
+    border: 1px solid #1d4d4f;
+    background: #29a19c;
+    outline: none;
+    color: white;
+    transition: 0.20s;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #1d4d4f;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    font-size: 1rem;
+    color: white;
+    padding: 5px;
+}
+
+a:hover {
+    color: #29a19c;
+}
+
+footer {
+    text-align: center;
+    padding: 40px;
+    color: rgba(255, 255, 255, 0.598);
+    font-size: 0.8rem;
+}
+
+.mobile-title {
+    display: none;
+}
+
+@media screen and (min-width: 320px) and (max-device-width: 480px) {
+    body {
+        background: #393e46;
+    }
+
+    footer, .top-part {
+        display: none;
+    }
+
+    .mobile-title {
+        display: block;
+        margin-top: 20px;
+        font-family: 'Miriam Libre', sans-serif;
+        font-size: 5rem;
+        letter-spacing: 0.1em; 
+        color: #959698;
+    }
+
+    .box-form {
+        margin: 0 auto;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-self: flex-start;
+        background: #393e46;
+    }
+
+    .form-element {
+        border: 0;
+        background: none;
+        margin: 40px auto;
+        text-align: center;
+        border: 1px solid #29a19c;
+        padding: 40px;
+        width: 80%;
+        outline: none;
+        color: white;
+        transition: 0.20s;
+        font-size: 3rem;
+
+    }
+
+    .form-element:focus {
+        padding: 40px;
+        border: 1px solid white
+    }
+
+    a {
+        font-size: 1.5rem;
+    }
+
+    .box-form h2 {
+        font-size: 5rem;
+        padding: 100px;
+    }
+}
