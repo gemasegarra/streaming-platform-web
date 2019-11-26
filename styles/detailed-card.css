@@ -1,0 +1,151 @@
+body {
+    background: white;
+}
+/* HEADER */
+
+.header {
+    height: 75vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../styles/images/interstellar-d.jpg) no-repeat top center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.movie-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 30px;
+    width: 30%;
+    color: white;
+}
+
+h1 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-size: 3rem;
+    letter-spacing: 0.6rem;
+    color: white;
+}
+
+.movie-info h2 {
+    letter-spacing: 0.4rem;
+    margin-bottom: 20px;
+
+}
+
+.tagline {
+    font-family: "Miriam Libre", sans-serif;
+    background: rgba(0, 0, 0, 0.7);
+    color: #6ba8a9;
+    font-size: 1.2rem;
+    letter-spacing: 0.1rem;
+    padding: 20px;
+    width: 50%;
+    margin-left: 20px;
+}
+
+.sinopsis {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    color: white;
+    width: 50%;
+    margin-left: 20px;
+    font-size: 1.2rem;
+}
+
+.rating span {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.icon {
+    margin-left: 5px;
+}
+
+button {
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    transition: all 0.5s;
+
+}
+
+.buttons {
+    cursor: pointer;
+    width: 80%;
+    margin: 30px;
+}
+
+button:hover {
+    background-color: #959698;
+}
+
+.rating {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+/*CAST SECTION*/
+
+.cast-container {
+    text-align: center;
+    padding: 20px;
+    background: white;
+}
+
+.cast-container h2 {
+    font-size: 2rem;
+    padding: 20px;
+
+}
+
+.cast {
+    display: flex;
+    justify-content: space-around;
+}
+
+.cast-card {
+    border: 1px solid #d0cece;
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.2);
+    width: 138px;
+}
+
+.actor-name {
+    font-weight: bold;
+}
+
+.full-cast {
+    padding: 20px;
+    cursor: pointer;
+}
+
+.full-cast:hover {
+    color: #959698;
+}
+
+/* TRAILER */
+
+.trailer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+}
+
+.trailer h2 {
+    font-size: 2rem;
+    padding: 10px;
+
+}
+
+iframe {
+    margin: auto;
+}
