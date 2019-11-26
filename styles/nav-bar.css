@@ -1,0 +1,45 @@
+/*NAVBAR*/
+.container {
+    height: 10vh;
+    background:#393e46;
+    padding: 0 50px;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.links-list {
+    list-style-type: none;
+}
+
+.nav-link {
+    text-transform: capitalize;
+}
+
+#logo {
+    font-family: 'Miriam Libre', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    color: #6ba8a9;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+    transition: all 0.5s;
+}
+
+a:hover {
+    color: #959698;
+}
+
+li {
+    display: inline-block;
+}
+
+.navigation-wrapper {
+    margin-right: auto;
+}
