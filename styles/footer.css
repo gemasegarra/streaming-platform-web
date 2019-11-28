@@ -1,0 +1,19 @@
+/*FOOTER*/
+.footer {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.598);
+    font-size: 0.8rem;
+    width: 100%;
+    background-color: #393e46;
+    padding-top: 20px;
+}
+
+.social-icon {
+    margin: 20px 10px;
+    color: white;
+}
+
+.social-icon:hover {
+    color: #29a19c;
+
+}
