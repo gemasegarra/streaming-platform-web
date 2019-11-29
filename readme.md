@@ -1,8 +1,8 @@
-# HTML5 & CSS3 streaming platform clone.
+# HTML5 & CSS3 streaming platform web
 
 **Objective:**
 
-Create a MVP of a streaming platform for movies and tv shows like Netflix or HBO. Design should be responsive.
+Create a MVP of a streaming platform for movies and/or tv shows like Netflix or HBO. Design should be responsive and accessible.
 
 **Stack:**
 
@@ -21,14 +21,18 @@ It should have three pages:
 2. Main page with:
     - Main menu with platform logo and options to go to different sections (new in, movies, tv-shows and user's favorites)
     - Menu should contain search bar and log off button
-    - Carousel rows with movies and tv-shows display cards
-    - Movies and tv-shows cards should show title, rating, year and small sinopsis
+    - Carousel rows with movies and/or tv-shows display cards
+    - Movies and tv-shows cards should show title, rating, year and small synopsis
 
 3. Detailed info of movie or tv-show with:
     - Same menu main page has
-    - Info about the movie or tv-show: title, rating, year, sinopsis and cast list
+    - Info about the movie or tv-show: title, rating, year, synopsis and cast list
     - Poster or trailer 
     - Carousel row with related content such as more episodes for tv-shows and similar movies for movies.
+
+**Credits:**
+
+Pictures are from [The Movie Database API](https://developers.themoviedb.org/)
 
 ---
 (Práctica realizada para Fundamentos Web: HTML5 y CSS3)
