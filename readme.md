@@ -40,7 +40,7 @@ Examples of how it looks on small devices:
 
 ![login-page-small](https://github.com/gemasegarra/streaming-platform-web/blob/master/img/login-page-smalldevice.png)
 
-![movie-card-smalldevice](https://github.com/gemasegarra/streaming-platform-web/blob/master/img/samlladevice.gif)
+![movie-card-smalldevice](https://github.com/gemasegarra/streaming-platform-web/blob/master/img/smalldevice.gif)
 
 **Credits:**
 
