@@ -1,122 +1,197 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-        content="width=device-width, minimum-scale = 1.0, initial-scale = 1.0, maximum-scale = 5.0, user-scalable=yes, shrink-to-fit=no" />
-    <meta name="description" content="Netflix clone" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/102a8e9465.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/general.css">
-    <link rel="stylesheet" href="styles/nav-bar.css">
-    <link rel="stylesheet" href="styles/detailed-card.css">
-    <link rel="favicon icon" href="styles/favicon.png">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, minimum-scale = 1.0, initial-scale = 1.0, maximum-scale = 5.0, user-scalable=yes, shrink-to-fit=no" />
+	<meta name="description" content="Netflix clone" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://kit.fontawesome.com/102a8e9465.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="styles/general.css">
+	<link rel="stylesheet" href="styles/nav-bar.css">
+	<link rel="stylesheet" href="styles/movie-carousel.css">
+	<link rel="stylesheet" href="styles/detailed-card.css">
+	<link rel="stylesheet" href="styles/footer.css">
+	<link rel="favicon icon" href="styles/favicon.png">
 
-    <title>not just TV</title>
+	<title>not just TV</title>
 </head>
 
 
 <body>
-    <nav class="container" id="navbar">
-        <div class="main-navigation-wrapper">
-            <ul class="links-list">
-                <a id="logo" href="#">not just TV</a>
-                <li><a class="nav-link" href="#">home</a></li>
-                <li><a class="nav-link" href="#movies">movies</a></li>
-                <li><a class="nav-link" href="#tv">TV shows</a></li>
-                <li><a class="nav-link" href="#new">recently added</a></li>
-                <li><a class="nav-link" href="#favorites">my favorites</a></li>
-            </ul>
-        </div>
-        <div class="navigation-wrapper"></div>
-        <ul class="icons">
-            <li>
-                <form class="search-box"><input type="search" placeholder="Search..." class="search-bar"><a
-                        class="search-button"> <i class="fas fa-search"></i></a>
-            </li>
-            </form>
-            <li><a class="nav-link" href="#"><i class="fas fa-user-cog"></i></a></li>
-        </ul>
-    </nav>
-    <!-- Header -->
-    <header class="header">
-        <div class="movie-info">
-            <h1><span>Interstellar</span></h1>
-            <h2>2014</h2>
-            <div class="rating">⭐️ <span>8'6</span>/10 </div>
-        </div>
-        <div class="buttons">
-            <button>Play<i class="icon fas fa-play-circle fa-lg"></i></button>
-            <button>Play trailer<i class="icon fas fa-play-circle fa-lg"></i></button>
-            <button>Add to favorites<i class="icon far fa-heart fa-lg"></i></button>
-        </div>
-        <span class="tagline">Mankind was born on Earth. It was never meant to die here.
-        </span>
-        <span class="sinopsis">Interstellar chronicles the adventures of a group of explorers who make use of a newly
-            discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved
-            in an interstellar voyage.
-        </span>
-        </div>
-    </header>
+		<div class="navigation-bar">
+				<input type="checkbox" id="check">
+				<label for="check" class="display-menu"><i class="fas fa-bars"></i></label>
+				<a id="logo" href="#">not just TV</a>
+				<nav class="container" id="navbar">
+							<ul class="link-list">
+							<li><a class="nav-link" href="#">home</a></li>
+								<li><a class="nav-link" href="#movies">movies</a></li>
+								<li><a class="nav-link" href="#tv">TV shows</a></li>
+								<li><a class="nav-link" href="#new">recently added</a></li>
+							<li><a class="nav-link" href="#favorites">my favorites</a></li>
+						</ul>
+					<label for="check" class="hide-menu"><i class="fas fa-times"></i></label>
+				</nav>
+			<div class="navigation-wrapper"></div>
+					<ul class="icons">
+						<li>
+							<form class="search-box"><input type="search" placeholder="Search..." class="search-bar">
+						</li>
+						</form>
+						<li><a class="nav-link" href="#"><i class="fas fa-user-cog"></i></a></li>
+					</ul>
+			</div>
+	<!-- Header -->
+	<header class="header">
+		<div class="movie-info">
+			<h1><span>Interstellar</span></h1>
+			<h2>2014</h2>
+			<div class="rating">⭐️ <span>8'6</span>/10 </div>
+		</div>
+		<div class="buttons">
+			<button><span class="button-description">Play</span><i class="icon fas fa-play-circle fa-lg"></i></button>
+			<a href="#trailer"><button>Play trailer<i class="icon fas fa-play-circle fa-lg"  id="play-trailer"></i></button></a>
+			<button><span class="button-description">Add to favorites</span><i class="icon far fa-heart fa-lg"></i></button>
+		</div>
+		<span class="tagline">Mankind was born on Earth. It was never meant to die here.
+		</span>
+		<span class="synopsis">Interstellar chronicles the adventures of a group of explorers who make use of a newly
+			discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved
+			in an interstellar voyage.
+		</span>
+		</div>
+	</header>
 
-    <section class="more-info">
-        <!-- Cast -->
-        <div class="cast-container">
-            <h2>Main cast:</h2>
-            <ul class="cast">
-                <li class="cast-card"><img class="cast-pic" alt="Matthew McConaughey"
-                        src="https://image.tmdb.org/t/p/w138_and_h175_face/jdRmHrG0TWXGhs4tO6TJNSoL25T.jpg">
-                    <p class="actor-name">Matthew McConaughey</p>
-                    <p>Joseph "Coop" Cooper</p>
-                </li>
-                <li class="cast-card">
-                    <img class="cast-pic" alt="Jessica Chastain"
-                        src="https://image.tmdb.org/t/p/w138_and_h175_face/lodMzLKSdrPcBry6TdoDsMN3Vge.jpg">
-                    <p class="actor-name">Jessica Chastain</p>
-                    <p>Murphy "Murph" Cooper</p>
-                </li>
-                <li class="cast-card">
-                    <img class="cast-pic" alt="Anne Hathaway"
-                        src="https://image.tmdb.org/t/p/w138_and_h175_face/tLelKoPNiyJCSEtQTz1FGv4TLGc.jpg">
-                    <p class="actor-name">Anne Hathaway</p>
-                    <p>Dr. Amelia Brand</p>
-                </li>
-                <li class="cast-card">
-                    <img class="cast-pic" alt="Michael Caine"
-                        src="https://image.tmdb.org/t/p/w138_and_h175_face/fx6vcV7iTo2SNywQRPfh6v62wRR.jpg">
-                    <p class="actor-name">Michael Caine</p>
-                    <p>Professor John Brand</p>
-                </li>
-                <li class="cast-card">
-                    <img class="cast-pic" alt="Casey Affleck"
-                        src="https://image.tmdb.org/t/p/w138_and_h175_face/kPNMpiZHsAzeQar4DiNsrekwHBU.jpg">
-                    <p class="actor-name">Casey Affleck</p>
-                    <p>Tom Cooper</p>
-                </li>
-            </ul>
-            <p class="full-cast">See full Cast & Crew</p>
-        </div>
-        <!-- Add trailer here -->
-        <div class="trailer" id="trailer"><span>
-                <h2>Trailer:</h2>
-            </span> <iframe width="560" height="315" src="https://www.youtube.com/embed/827FNDpQWrQ" frameborder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe></div>
-    </section>
+	<section class="more-info">
+		<div class="synopsis-mobile"><h2>Synopsis</h2> Interstellar chronicles the adventures of a group of explorers who make use of a newly
+			discovered wormhole to surpass the limitations on human space travel and conquer the vast distances involved
+			in an interstellar voyage.</div>
 
-    <footer>
-        <div class="footer">
-            <p>Gema S. | 2019</p>
-            <a href="mailto:gema.segb@gmail.com" aria-label="Email"><i
-                    class="social-icon fas fa-envelope  fa-lg"></i></a>
-            <a href="https://github.com/gemasegarra" target="_blank" rel="noopener" aria-label="github"><i
-                    class="social-icon fab fa-github  fa-lg"></i></a>
-            <a href="https://twitter.com/gemasega" target="_blank" rel="noopener" aria-label="twitter"><i
-                    class="social-icon fab fa-twitter fa-lg"></i></a>
-        </div>
-    </footer>
+		<!-- Cast -->
+		<div class="cast-container">
+			<h2>Main cast</h2>
+			<ul class="cast">
+				<li class="cast-card"><img class="cast-pic" alt="Matthew McConaughey"
+						src="https://image.tmdb.org/t/p/w138_and_h175_face/jdRmHrG0TWXGhs4tO6TJNSoL25T.jpg">
+					<p class="actor-name">Matthew McConaughey</p>
+					<p>Joseph "Coop" Cooper</p>
+				</li>
+				<li class="cast-card">
+					<img class="cast-pic" alt="Jessica Chastain"
+						src="https://image.tmdb.org/t/p/w138_and_h175_face/lodMzLKSdrPcBry6TdoDsMN3Vge.jpg">
+					<p class="actor-name">Jessica Chastain</p>
+					<p>Murphy "Murph" Cooper</p>
+				</li>
+				<li class="cast-card">
+					<img class="cast-pic" alt="Anne Hathaway"
+						src="https://image.tmdb.org/t/p/w138_and_h175_face/tLelKoPNiyJCSEtQTz1FGv4TLGc.jpg">
+					<p class="actor-name">Anne Hathaway</p>
+					<p>Dr. Amelia Brand</p>
+				</li>
+				<li class="cast-card">
+					<img class="cast-pic" alt="Michael Caine"
+						src="https://image.tmdb.org/t/p/w138_and_h175_face/fx6vcV7iTo2SNywQRPfh6v62wRR.jpg">
+					<p class="actor-name">Michael Caine</p>
+					<p>Professor John Brand</p>
+				</li>
+				<li class="cast-card">
+					<img class="cast-pic" alt="Casey Affleck"
+						src="https://image.tmdb.org/t/p/w138_and_h175_face/kPNMpiZHsAzeQar4DiNsrekwHBU.jpg">
+					<p class="actor-name">Casey Affleck</p>
+					<p>Tom Cooper</p>
+				</li>
+			</ul>
+			<p class="full-cast">See full cast here</p>
+		</div>
+
+		<!-- Add trailer here -->
+		<div class="trailer" id="trailer"><span>
+				<h2>Trailer</h2>
+			</span> <iframe width="560" height="315" src="https://www.youtube.com/embed/827FNDpQWrQ" frameborder="0"
+				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+		<!-- Recommendations -->
+		<div class="similar">
+			<h2 class="rec">Recommendations</h2>
+			<div class="movie-container">
+
+				<div class="rec-card">
+					<div class="movie-rec"><img class="movie-picture" alt="The Martian"
+							src="https://image.tmdb.org/t/p/w250_and_h141_face/sy3e2e4JwdAtd2oZGA2uUilZe8j.jpg">
+						<div class="play">
+							<div class="title">
+								<h2>The Martian</h2> (2015) <span class="rating">⭐️ <span>8</span>/10 </span>
+							</div>
+							<i class="play-icon fas fa-play-circle fa-lg"></i>
+							<a href="/detailed-card.html"><i class="icon fas fa-info-circle fa-lg"></i></a>
+							<div class="tag-line">Bring Him Home
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="rec-card">
+					<div class="movie-rec"><img class="movie-picture" alt="Gravity"
+							src="https://image.tmdb.org/t/p/w250_and_h141_face/9aoWzwOwy9NLuSk9LkBwwrBdPYM.jpg">
+						<div class="play">
+							<div class="title">
+								<h2>Gravity</h2> (2013)<span class="rating">⭐️ <span>7'7</span>/10 </span>
+							</div>
+							
+							<i class="play-icon fas fa-play-circle fa-lg"></i>
+							<a href="/detailed-card.html"><i class="icon fas fa-info-circle fa-lg"></i></a>
+							<div class="tag-line">Don't Let Go
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="rec-card">
+					<div class="movie-rec"><img class="movie-picture" alt="Edge of Tomorrow"
+							src="https://image.tmdb.org/t/p/w250_and_h141_face/7mgKeg18Qml5nJQa56RBZO7dIu0.jpg">
+						<div class="play">
+							<div class="title">
+								<h2>Edge of Tomorrow</h2> (2014) <span class="rating">⭐️ <span>7'9</span>/10 </span>
+							</div>
+							<i class="play-icon fas fa-play-circle fa-lg"></i>
+							<a href="/detailed-card.html"><i class="icon fas fa-info-circle fa-lg"></i></a>
+							<div class="tag-line">Live, Die, Repeat
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div class="rec-card">
+					<div class="movie-rec"><img class="movie-picture" alt="Ex Machina"
+							src="https://image.tmdb.org/t/p/w250_and_h141_face/9X3cDZb4GYGQeOnZHLwMcCFz2Ro.jpg">
+						<div class="play">
+							<div class="title">
+								<h2>Ex Machina</h2> (2015) <span class="rating">⭐️ <span>7'7</span>/10 </span>
+							</div>
+							<i class="play-icon fas fa-play-circle fa-lg"></i>
+							<a href="/detailed-card.html"><i class="icon fas fa-info-circle fa-lg"></i></a>
+							<div class="tag-line-long">There is nothing more human than the will to survive
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="footer">
+			<p>Gema S. | 2019</p>
+			<a href="mailto:gema.segb@gmail.com" aria-label="Email"><i class="social-icon fas fa-envelope  fa-lg"></i></a>
+			<a href="https://github.com/gemasegarra" target="_blank" rel="noopener" aria-label="github"><i
+					class="social-icon fab fa-github  fa-lg"></i></a>
+			<a href="https://twitter.com/gemasega" target="_blank" rel="noopener" aria-label="twitter"><i
+					class="social-icon fab fa-twitter fa-lg"></i></a>
+			</div>
+	</footer>
 </body>
 
 </html>
