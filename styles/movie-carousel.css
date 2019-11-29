@@ -1,0 +1,86 @@
+.content-section{
+  background-color: white;
+}
+.carousel h2 {
+  font-size: 2rem;
+  padding: 20px;
+  text-align: center;
+}
+
+.movie-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  grid-template-rows: repeat(2, auto);
+}
+
+.rec-card {
+  margin: 30px;
+  position: relative;
+}
+
+.movie-container:hover .rec-card {
+  transform: translateX(3%);
+}
+
+.movie-container .rec-card:hover~.rec-card {
+  transform: translateX(-3%);
+}
+
+.movie-container .rec-card {
+  transition: transform 200ms ease 100ms;
+}
+
+.play {
+  width: 250px;
+  height: 141px;
+  margin-left: 125px;
+  position: absolute;
+  top: 49%;
+  bottom: 51%;
+  transform: translate(-50%, -50%);
+  transition: .5s ease;
+  opacity: 0;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  background:
+      linear-gradient(rgba(0, 0, 0, 0.8),
+          rgba(0, 0, 0, 0.8));
+}
+
+.movie-rec:hover .play {
+  opacity: 1;
+}
+
+.title h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 5px;
+  padding: 0;
+}
+
+.tag-line-long {
+  font-size: 0.9rem;
+}
+
+.play-icon {
+  margin: 10px;
+  border-radius: 20px;
+  transition: all 0.5s;
+}
+
+.play-icon:hover {
+  background-color: #959698;
+
+}
+
+.title .rating {
+  margin-left: 10px;
+  font-size: 1rem;
+}
+
+.title .rating span {
+  font-size: 1rem;
+
+}
