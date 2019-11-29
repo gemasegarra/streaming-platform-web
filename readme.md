@@ -1,5 +1,7 @@
 # HTML5 & CSS3 streaming platform web
 
+![main-page](https://github.com/gemasegarra/streaming-platform-web/blob/master/img/main-page.png)
+
 **Objective:**
 
 Create a MVP of a streaming platform for movies and/or tv shows like Netflix or HBO. Design should be responsive and accessible.
@@ -18,6 +20,8 @@ It should have three pages:
     - login button that initiates access to the website
     - link in case user forgets their password
 
+![login-page](https://github.com/gemasegarra/streaming-platform-web/blob/master/img/login-page.png)
+
 2. Main page with:
     - Main menu with platform logo and options to go to different sections (new in, movies, tv-shows and user's favorites)
     - Menu should contain search bar and log off button
@@ -29,6 +33,14 @@ It should have three pages:
     - Info about the movie or tv-show: title, rating, year, synopsis and cast list
     - Poster or trailer 
     - Carousel row with related content such as more episodes for tv-shows and similar movies for movies.
+
+![web-pageshow](https://github.com/gemasegarra/streaming-platform-web/blob/master/img/show.gif)
+
+Examples of how it looks on small devices:
+
+![login-page-small](https://github.com/gemasegarra/streaming-platform-web/blob/master/img/login-page-smalldevice.png)
+
+![movie-card-smalldevice](https://github.com/gemasegarra/streaming-platform-web/blob/master/img/samlladevice.gif)
 
 **Credits:**
 
