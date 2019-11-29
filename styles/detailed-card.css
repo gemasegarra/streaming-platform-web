@@ -1,6 +1,7 @@
 body {
     background: white;
 }
+
 /* HEADER */
 .header {
     height: 75vh;
@@ -41,15 +42,15 @@ h1 {
     font-size: 1.2rem;
     letter-spacing: 0.1rem;
     padding: 20px;
-    width: 50%;
+    width: 70%;
     margin-left: 20px;
 }
 
-.sinopsis {
+.synopsis {
     background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     color: white;
-    width: 50%;
+    width: 70%;
     margin-left: 20px;
     font-size: 1.1rem;
 }
@@ -68,10 +69,11 @@ button {
     border: none;
     cursor: pointer;
     text-align: center;
+    margin-right: 20px;
     padding: 10px;
     font-size: 1rem;
     border-radius: 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(45, 45, 45, 0.8);
     color: white;
     transition: all 0.5s;
 
@@ -80,7 +82,7 @@ button {
 .buttons {
     cursor: pointer;
     width: 80%;
-    margin: 30px;
+    margin: auto 20px;
 }
 
 button:hover {
@@ -94,10 +96,20 @@ button:hover {
 
 /*CAST SECTION*/
 
+.synopsis-mobile {
+    padding: 20px;
+}
+
+.synopsis-mobile h2 {
+    text-align: center;
+    font-size: 2rem;
+    padding: 20px;
+
+}
+
 .cast-container {
     text-align: center;
     padding: 20px;
-    background: white;
 }
 
 .cast-container h2 {
@@ -107,14 +119,19 @@ button:hover {
 }
 
 .cast {
-    display: flex;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(138px, 1fr));
+    grid-template-rows: repeat(2, auto);
+    grid-row-gap: 10px;
 }
+
+
 
 .cast-card {
     border: 1px solid #d0cece;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
     width: 138px;
+    margin: 0 auto;
 }
 
 .actor-name {
@@ -147,3 +164,62 @@ button:hover {
 iframe {
     margin: auto;
 }
+
+/* RESPONSIVE */
+
+@media screen and (min-width: 500px) {
+    .synopsis-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 559px) {
+    .synopsis {
+        display: none;
+    }
+    .synopsis-mobile {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 320px) and (max-device-width: 480px) {
+    .header {
+        height: 65vh;
+    }
+
+    .movie-info {
+        margin: 20px;
+    }
+
+    h1 {
+        font-size: 1.7rem;
+    }
+
+    .synopsis {
+        display: none;
+    }
+
+    .tagline {
+        padding: 10px;
+        font-size: 1.1rem;
+        width: 80%;
+    }
+
+    .button-description {
+        display: none;
+    }
+
+    .icon {
+        margin-left: 0;
+    }
+
+    #play-trailer{
+        margin-left: 5px;
+    }
+
+    iframe {
+        width: 100%;
+    }
+}
+
