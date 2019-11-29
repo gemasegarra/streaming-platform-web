@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<div lang="en">
+<html lang="en">
 
 	<head>
 		<meta charset="UTF-8">
@@ -23,25 +23,25 @@
 		<!-- NAVIGATION BAR -->
 		<div class="navigation-bar">
 			<input type="checkbox" id="check">
-			<label for="check" class="display-menu"><i class="fas fa-bars"></i></label>
-			<a id="logo" href="#">not just TV</a>
+			<label for="check" class="display-menu"><i aria-hidden="true" class="fas fa-bars" title="hamburger menu bars"></i></label>
+			<a id="logo" href="#" aria-label="home link">not just TV</a>
 			<nav class="container" id="navbar">
 				<ul class="link-list">
-					<li><a class="nav-link" href="#">home</a></li>
-					<li><a class="nav-link" href="#movies">movies</a></li>
-					<li><a class="nav-link" href="#tv">TV shows</a></li>
-					<li><a class="nav-link" href="#new">recently added</a></li>
-					<li><a class="nav-link" href="#favorites">my favorites</a></li>
+					<li><a class="nav-link" aria-label="home link" href="#">home</a></li>
+					<li><a class="nav-link" aria-label="it goes to movies section" href="#movies">movies</a></li>
+					<li><a class="nav-link" aria-label="it goes to tv shows section" href="#tv">TV shows</a></li>
+					<li><a class="nav-link" aria-label="it goes to recently added section" href="#new">recently added</a></li>
+					<li><a class="nav-link" aria-label="it goes to your favorites section" href="#favorites">my favorites</a></li>
 				</ul>
-				<label for="check" class="hide-menu"><i class="fas fa-times"></i></label>
+				<label for="check" class="hide-menu"><i aria-hidden="true" class="fas fa-times" title="cross to close menu"></i></label>
 			</nav>
 			<div class="navigation-wrapper"></div>
 			<ul class="icons">
 				<li>
-					<form class="search-box"><input type="search" placeholder="Search..." class="search-bar">
+					<form class="search-box"><input type="search" placeholder="Search..." class="search-bar" aria-label="search bar">
 				</li>
 				</form>
-				<li><a class="nav-link" href="#"><i class="fas fa-user-cog"></i></a></li>
+				<li><a class="nav-link" href="#" aria-label="home link. user settings not active."><i aria-hidden="true" class="fas fa-user-cog" title="user settings icon"></i></a></li>
 			</ul>
 		</div>
 
@@ -52,11 +52,11 @@
 					in space in an attempt to ensure humanity's survival."
 				</span>
 				<div class="buttons">
-					<button><span class="button-description">Play</span><i class="icon fas fa-play-circle fa-lg"></i></button>
-					<button><span class="button-description">Add to favorites</span><i
-							class="icon far fa-heart fa-lg"></i></button>
-					<a href="/detailed-card.html"><button><span class="button-description">More info</span><i
-								class="icon fas fa-info-circle fa-lg"></i></button></a>
+					<button><span class="button-description">Play</span><i aria-hidden="true" class="icon fas fa-play-circle fa-lg" title="play icon"></i></button>
+					<button><span class="button-description">Add to favorites</span><i aria-hidden="true"
+							class="icon far fa-heart fa-lg" title="heart icon"></i></button>
+					<a href="/detailed-card.html"><button><span class="button-description">More info</span><i aria-hidden="true"
+								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></button></a>
 				</div>
 			</div>
 		</header>
@@ -72,10 +72,11 @@
 							src="https://image.tmdb.org/t/p/w250_and_h141_face/sy3e2e4JwdAtd2oZGA2uUilZe8j.jpg">
 						<div class="play">
 							<div class="title">
-								<h2>The Martian</h2> (2015) <span class="rating">⭐️ <span>8</span>/10 </span>
+								<h2>The Martian</h2> (2015) <span class="rating" aria-label="star">⭐️ <span>8</span>/10 </span>
 							</div>
-							<i class="play-icon fas fa-play-circle fa-lg"></i>
-							<a href="/detailed-card.html"><i class="icon fas fa-info-circle fa-lg"></i></a>
+							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+							<a href="/detailed-card.html"><i aria-hidden="true"
+								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
 							<div class="tag-line">Bring Him Home
 							</div>
 						</div>
@@ -86,10 +87,11 @@
 							src="https://image.tmdb.org/t/p/w250_and_h141_face/9aoWzwOwy9NLuSk9LkBwwrBdPYM.jpg">
 						<div class="play">
 							<div class="title">
-								<h2>Gravity</h2> (2013)<span class="rating">⭐️ <span>7'7</span>/10 </span>
+								<h2>Gravity</h2> (2013)<span class="rating" aria-label="star">⭐️ <span>7'7</span>/10 </span>
 							</div>
-							<i class="play-icon fas fa-play-circle fa-lg"></i>
-							<a href="/detailed-card.html"><i class="icon fas fa-info-circle fa-lg"></i></a>
+							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+							<a href="/detailed-card.html"><i aria-hidden="true"
+								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
 							<div class="tag-line">Don't Let Go
 							</div>
 						</div>
@@ -100,10 +102,11 @@
 							src="https://image.tmdb.org/t/p/w250_and_h141_face/7mgKeg18Qml5nJQa56RBZO7dIu0.jpg">
 						<div class="play">
 							<div class="title">
-								<h2>Edge of Tomorrow</h2> (2014) <span class="rating">⭐️ <span>7'9</span>/10 </span>
+								<h2>Edge of Tomorrow</h2> (2014) <span class="rating" aria-label="star">⭐️ <span>7'9</span>/10 </span>
 							</div>
-							<i class="play-icon fas fa-play-circle fa-lg"></i>
-							<a href="/detailed-card.html"><i class="icon fas fa-info-circle fa-lg"></i></a>
+							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+							<a href="/detailed-card.html"><i aria-hidden="true"
+								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
 							<div class="tag-line">Live, Die, Repeat
 							</div>
 						</div>
@@ -114,10 +117,11 @@
 							src="https://image.tmdb.org/t/p/w250_and_h141_face/9X3cDZb4GYGQeOnZHLwMcCFz2Ro.jpg">
 						<div class="play">
 							<div class="title">
-								<h2>Ex Machina</h2> (2015) <span class="rating">⭐️ <span>7'7</span>/10 </span>
+								<h2>Ex Machina</h2> (2015) <span class="rating" aria-label="star">⭐️ <span>7'7</span>/10 </span>
 							</div>
-							<i class="play-icon fas fa-play-circle fa-lg"></i>
-							<a href="/detailed-card.html"><i class="icon fas fa-info-circle fa-lg"></i></a>
+							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+							<a href="/detailed-card.html"><i aria-hidden="true"
+								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
 							<div class="tag-line-long">There is nothing more human than the will to survive
 							</div>
 						</div>
@@ -134,10 +138,11 @@
 							src="https://image.tmdb.org/t/p/w250_and_h141_face/8GZ91vtbYOMp05qruAGPezWC0Ja.jpg">
 						<div class="play">
 							<div class="title">
-								<h2>The Sopranos</h2> (1999-2007) <span class="rating">⭐️ <span>9'2</span>/10 </span>
+								<h2>The Sopranos</h2> (1999-2007) <span class="rating" aria-label="star">⭐️ <span>9'2</span>/10 </span>
 							</div>
-							<i class="play-icon fas fa-play-circle fa-lg"></i>
-							<a href="/detailed-card.html"><i class="icon fas fa-info-circle fa-lg"></i></a>
+							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+							<a href="/detailed-card.html"><i aria-hidden="true"
+								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
 							<div class="tag-line-long">Mob boss Tony Soprano deals with personal and professional issues in his home and business life 
 							</div>
 						</div>
@@ -148,10 +153,11 @@
 							src="https://image.tmdb.org/t/p/w250_and_h141_face/aaNzIG6CweG9riEBKBZ39QZA61w.jpg">
 						<div class="play">
 							<div class="title">
-								<h2>The Wire</h2> (2002-2008) <span class="rating">⭐️ <span>9'3</span>/10 </span>
+								<h2>The Wire</h2> (2002-2008) <span class="rating" aria-label="star">⭐️ <span>9'3</span>/10 </span>
 							</div>
-							<i class="play-icon fas fa-play-circle fa-lg"></i>
-							<a href="/detailed-card.html"><i class="icon fas fa-info-circle fa-lg"></i></a>
+							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+							<a href="/detailed-card.html"><i aria-hidden="true"
+								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
 							<div class="tag-line-long">The Baltimore drug scene seen through the eyes of drug dealers and law enforcement
 							</div>
 						</div>
@@ -162,10 +168,11 @@
 							src="https://image.tmdb.org/t/p/w250_and_h141_face/vwjX5iPsNZngn8Uj3mz51tvd6mA.jpg">
 						<div class="play">
 							<div class="title">
-								<h2>Six Feet Under</h2> (2001-2005) <span class="rating">⭐️ <span>8'7</span>/10 </span>
+								<h2>Six Feet Under</h2> (2001-2005) <span class="rating" aria-label="star">⭐️ <span>8'7</span>/10 </span>
 							</div>
-							<i class="play-icon fas fa-play-circle fa-lg"></i>
-							<a href="/detailed-card.html"><i class="icon fas fa-info-circle fa-lg"></i></a>
+							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+							<a href="/detailed-card.html"><i aria-hidden="true"
+								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
 							<div class="tag-line-long">A chronicle of the lives of a dysfunctional family who run an independent funeral home in LA
 							</div>
 						</div>
@@ -176,10 +183,11 @@
 							src="https://image.tmdb.org/t/p/w250_and_h141_face/2Ahm0YjLNQKuzSf9LOkHrXk8qIE.jpg">
 						<div class="play">
 							<div class="title">
-								<h2>True Detective</h2> (2014-) <span class="rating">⭐️ <span>9</span>/10 </span>
+								<h2>True Detective</h2> (2014-) <span class="rating" aria-label="star">⭐️ <span>9</span>/10 </span>
 							</div>
-							<i class="play-icon fas fa-play-circle fa-lg"></i>
-							<a href="/detailed-card.html"><i class="icon fas fa-info-circle fa-lg"></i></a>
+							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+							<a href="/detailed-card.html"><i aria-hidden="true"
+								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
 							<div class="tag-line-long">Seasonal anthology series of police investigations
 							</div>
 						</div>
@@ -275,3 +283,4 @@
 			</div>
 		</footer>
 	</body>
+</html>

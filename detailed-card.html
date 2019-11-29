@@ -22,25 +22,25 @@
 <body>
 		<div class="navigation-bar">
 				<input type="checkbox" id="check">
-				<label for="check" class="display-menu"><i class="fas fa-bars"></i></label>
-				<a id="logo" href="#">not just TV</a>
-				<nav class="container" id="navbar">
-							<ul class="link-list">
-							<li><a class="nav-link" href="#">home</a></li>
-								<li><a class="nav-link" href="#movies">movies</a></li>
-								<li><a class="nav-link" href="#tv">TV shows</a></li>
-								<li><a class="nav-link" href="#new">recently added</a></li>
-							<li><a class="nav-link" href="#favorites">my favorites</a></li>
+				<label for="check" class="display-menu"><i aria-hidden="true" class="fas fa-bars" title="hamburger menu bars"></i></label>
+				<a id="logo" href="#" aria-label="home link">not just TV</a>
+			<nav class="container" id="navbar">
+				<ul class="link-list">
+					<li><a class="nav-link" aria-label="home link" href="#">home</a></li>
+					<li><a class="nav-link" aria-label="it goes to movies section" href="#movies">movies</a></li>
+					<li><a class="nav-link" aria-label="it goes to tv shows section" href="#tv">TV shows</a></li>
+					<li><a class="nav-link" aria-label="it goes to recently added section" href="#new">recently added</a></li>
+					<li><a class="nav-link" aria-label="it goes to your favorites section" href="#favorites">my favorites</a></li>
 						</ul>
-					<label for="check" class="hide-menu"><i class="fas fa-times"></i></label>
+					<label for="check" class="hide-menu"><i aria-hidden="true" class="fas fa-times" title="cross to close menu"></i></label>
 				</nav>
 			<div class="navigation-wrapper"></div>
 					<ul class="icons">
 						<li>
-							<form class="search-box"><input type="search" placeholder="Search..." class="search-bar">
+							<form class="search-box"><input type="search" placeholder="Search..." class="search-bar" aria-label="search bar"> 
 						</li>
 						</form>
-						<li><a class="nav-link" href="#"><i class="fas fa-user-cog"></i></a></li>
+						<li><a class="nav-link" href="#"><i aria-hidden="true" class="fas fa-user-cog" title="user settings icon"></i></a></li>
 					</ul>
 			</div>
 	<!-- Header -->
@@ -48,7 +48,7 @@
 		<div class="movie-info">
 			<h1><span>Interstellar</span></h1>
 			<h2>2014</h2>
-			<div class="rating">⭐️ <span>8'6</span>/10 </div>
+			<div class="rating" aria-label="star">⭐️ <span>8'6</span>/10 </div>
 		</div>
 		<div class="buttons">
 			<button><span class="button-description">Play</span><i class="icon fas fa-play-circle fa-lg"></i></button>
@@ -109,7 +109,7 @@
 		<!-- Add trailer here -->
 		<div class="trailer" id="trailer"><span>
 				<h2>Trailer</h2>
-			</span> <iframe width="560" height="315" src="https://www.youtube.com/embed/827FNDpQWrQ" frameborder="0"
+			</span> <iframe title="Interstellar youtube official trailer" width="560" height="315" src="https://www.youtube.com/embed/827FNDpQWrQ" frameborder="0"
 				allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
 
 		<!-- Recommendations -->
@@ -122,10 +122,11 @@
 							src="https://image.tmdb.org/t/p/w250_and_h141_face/sy3e2e4JwdAtd2oZGA2uUilZe8j.jpg">
 						<div class="play">
 							<div class="title">
-								<h2>The Martian</h2> (2015) <span class="rating">⭐️ <span>8</span>/10 </span>
+								<h2>The Martian</h2> (2015) <span class="rating" aria-label="star">⭐️ <span>8</span>/10 </span>
 							</div>
-							<i class="play-icon fas fa-play-circle fa-lg"></i>
-							<a href="/detailed-card.html"><i class="icon fas fa-info-circle fa-lg"></i></a>
+							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+							<a href="/detailed-card.html" aria-label="it goes to detailed card with more info"><i aria-hidden="true"
+								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
 							<div class="tag-line">Bring Him Home
 							</div>
 						</div>
@@ -137,11 +138,12 @@
 							src="https://image.tmdb.org/t/p/w250_and_h141_face/9aoWzwOwy9NLuSk9LkBwwrBdPYM.jpg">
 						<div class="play">
 							<div class="title">
-								<h2>Gravity</h2> (2013)<span class="rating">⭐️ <span>7'7</span>/10 </span>
+								<h2>Gravity</h2> (2013)<span class="rating" aria-label="star">⭐️ <span>7'7</span>/10 </span>
 							</div>
 							
-							<i class="play-icon fas fa-play-circle fa-lg"></i>
-							<a href="/detailed-card.html"><i class="icon fas fa-info-circle fa-lg"></i></a>
+							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+							<a href="/detailed-card.html" aria-label="it goes to detailed card with more info"><i aria-hidden="true"
+								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
 							<div class="tag-line">Don't Let Go
 							</div>
 						</div>
@@ -153,10 +155,11 @@
 							src="https://image.tmdb.org/t/p/w250_and_h141_face/7mgKeg18Qml5nJQa56RBZO7dIu0.jpg">
 						<div class="play">
 							<div class="title">
-								<h2>Edge of Tomorrow</h2> (2014) <span class="rating">⭐️ <span>7'9</span>/10 </span>
+								<h2>Edge of Tomorrow</h2> (2014) <span class="rating" aria-label="star">⭐️ <span>7'9</span>/10 </span>
 							</div>
-							<i class="play-icon fas fa-play-circle fa-lg"></i>
-							<a href="/detailed-card.html"><i class="icon fas fa-info-circle fa-lg"></i></a>
+							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+							<a href="/detailed-card.html" aria-label="it goes to detailed card with more info"><i aria-hidden="true"
+								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
 							<div class="tag-line">Live, Die, Repeat
 							</div>
 						</div>
@@ -168,10 +171,11 @@
 							src="https://image.tmdb.org/t/p/w250_and_h141_face/9X3cDZb4GYGQeOnZHLwMcCFz2Ro.jpg">
 						<div class="play">
 							<div class="title">
-								<h2>Ex Machina</h2> (2015) <span class="rating">⭐️ <span>7'7</span>/10 </span>
+								<h2>Ex Machina</h2> (2015) <span class="rating" aria-label="star">⭐️ <span>7'7</span>/10 </span>
 							</div>
-							<i class="play-icon fas fa-play-circle fa-lg"></i>
-							<a href="/detailed-card.html"><i class="icon fas fa-info-circle fa-lg"></i></a>
+							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+							<a href="/detailed-card.html" aria-label="it goes to detailed card with more info"><i aria-hidden="true"
+								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
 							<div class="tag-line-long">There is nothing more human than the will to survive
 							</div>
 						</div>
