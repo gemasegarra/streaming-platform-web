@@ -125,8 +125,6 @@ button:hover {
     grid-row-gap: 10px;
 }
 
-
-
 .cast-card {
     border: 1px solid #d0cece;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
@@ -164,6 +162,31 @@ button:hover {
 iframe {
     margin: auto;
 }
+
+/* SIMILAR SECTION*/
+.similar {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.rec {
+    font-size: 2rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.tag-line {
+    font-family: "Miriam Libre", sans-serif;
+    color: #6ba8a9;
+    letter-spacing: 0.1rem;
+}
+
+.tag-line-long {
+    font-family: "Miriam Libre", sans-serif;
+    color: #6ba8a9;
+}
+
+
 
 /* RESPONSIVE */
 
