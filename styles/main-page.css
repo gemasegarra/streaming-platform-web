@@ -14,13 +14,14 @@
     flex-direction: column;
     margin-top: 30px;
     margin-left: 30px;
-    width: 35%;
+    width: 50%;
     color: white;
 }
 
 h1 {
     margin-bottom: 30px;
     text-transform: uppercase;
+    text-align: center;
     font-size: 3rem;
     letter-spacing: 0.6rem;
     color: white;
@@ -30,6 +31,7 @@ h1 {
 .sinopsis {
     background: rgba(0, 0, 0, 0.7);
     padding: 10px;
+    margin: auto;
 }
 
 .icon {
@@ -50,9 +52,24 @@ button {
 
 .buttons {
     cursor: pointer;
-    margin-top: 30px;
+    margin: 30px auto;
 }
 
 button:hover {
     background-color: #959698;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 320px) and (max-device-width: 480px) {
+    .movie-info h1 {
+        font-size: 1.5rem;
+    }
+    
+    .button-description {
+        display:none;
+    }
+    
+    .icon {
+        margin: 0;
+    }
 }
