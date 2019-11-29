@@ -32,7 +32,6 @@ h1 {
 .movie-info h2 {
     letter-spacing: 0.4rem;
     margin-bottom: 20px;
-
 }
 
 .tagline {
@@ -76,7 +75,6 @@ button {
     background-color: rgba(45, 45, 45, 0.8);
     color: white;
     transition: all 0.5s;
-
 }
 
 .buttons {
@@ -115,7 +113,6 @@ button:hover {
 .cast-container h2 {
     font-size: 2rem;
     padding: 20px;
-
 }
 
 .cast {
@@ -156,7 +153,6 @@ button:hover {
 .trailer h2 {
     font-size: 2rem;
     padding: 10px;
-
 }
 
 iframe {
@@ -185,7 +181,6 @@ iframe {
     font-family: "Miriam Libre", sans-serif;
     color: #6ba8a9;
 }
-
 
 
 /* RESPONSIVE */

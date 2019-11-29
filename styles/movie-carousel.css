@@ -1,6 +1,8 @@
+/* CAROUSEL SECTION */
 .content-section{
   background-color: white;
 }
+
 .carousel h2 {
   font-size: 2rem;
   padding: 20px;
@@ -31,9 +33,7 @@
   color: white;
   cursor: pointer;
   text-align: center;
-  background:
-      linear-gradient(rgba(0, 0, 0, 0.8),
-          rgba(0, 0, 0, 0.8));
+  background:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8));
 }
 
 .movie-rec:hover .play {
@@ -60,7 +60,6 @@
 
 .play-icon:hover {
   background-color: #959698;
-
 }
 
 .title .rating {
@@ -70,5 +69,4 @@
 
 .title .rating span {
   font-size: 1rem;
-
 }
