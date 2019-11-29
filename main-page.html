@@ -1,286 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport"
-			content="width=device-width, minimum-scale = 1.0, initial-scale = 1.0, maximum-scale = 5.0, user-scalable=yes, shrink-to-fit=no" />
-		<meta name="description" content="Netflix clone" />
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<script src="https://kit.fontawesome.com/102a8e9465.js" crossorigin="anonymous"></script>
-		<link rel="stylesheet" href="styles/general.css">
-		<link rel="stylesheet" href="styles/main-page.css">
-		<link rel="stylesheet" href="styles/nav-bar.css">
-		<link rel="stylesheet" href="styles/footer.css">
-		<link rel="stylesheet" href="styles/movie-carousel.css">
-		<link rel="favicon icon" href="styles/favicon.png">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, minimum-scale = 1.0, initial-scale = 1.0, maximum-scale = 5.0, user-scalable=yes, shrink-to-fit=no" />
+	<meta name="description" content="Streaming platform web" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src="https://kit.fontawesome.com/102a8e9465.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="styles/general.css">
+	<link rel="stylesheet" href="styles/main-page.css">
+	<link rel="stylesheet" href="styles/nav-bar.css">
+	<link rel="stylesheet" href="styles/footer.css">
+	<link rel="stylesheet" href="styles/movie-carousel.css">
+	<link rel="favicon icon" href="styles/favicon.png">
 
-		<title>not just TV</title>
-	</head>
+	<title>not just TV</title>
+</head>
 
-	<body>
+<body>
 
-		<!-- NAVIGATION BAR -->
-		<div class="navigation-bar">
-			<input type="checkbox" id="check">
-			<label for="check" class="display-menu"><i aria-hidden="true" class="fas fa-bars" title="hamburger menu bars"></i></label>
-			<a id="logo" href="#" aria-label="home link">not just TV</a>
-			<nav class="container" id="navbar">
-				<ul class="link-list">
-					<li><a class="nav-link" aria-label="home link" href="#">home</a></li>
-					<li><a class="nav-link" aria-label="it goes to movies section" href="#movies">movies</a></li>
-					<li><a class="nav-link" aria-label="it goes to tv shows section" href="#tv">TV shows</a></li>
-					<li><a class="nav-link" aria-label="it goes to recently added section" href="#new">recently added</a></li>
-					<li><a class="nav-link" aria-label="it goes to your favorites section" href="#favorites">my favorites</a></li>
-				</ul>
-				<label for="check" class="hide-menu"><i aria-hidden="true" class="fas fa-times" title="cross to close menu"></i></label>
-			</nav>
-			<div class="navigation-wrapper"></div>
-			<ul class="icons">
-				<li>
-					<form class="search-box"><input type="search" placeholder="Search..." class="search-bar" aria-label="search bar">
-				</li>
-				</form>
-				<li><a class="nav-link" href="#" aria-label="home link. user settings not active."><i aria-hidden="true" class="fas fa-user-cog" title="user settings icon"></i></a></li>
+<!-- NAVIGATION BAR -->
+	<div class="navigation-bar">
+		<input type="checkbox" id="check">
+		<label for="check" class="display-menu"><i aria-hidden="true" class="fas fa-bars"
+				title="hamburger menu bars"></i></label>
+		<a id="logo" href="#" aria-label="home link">not just TV</a>
+		<nav class="container" id="navbar">
+			<ul class="link-list">
+				<li><a class="nav-link" aria-label="home link" href="#">home</a></li>
+				<li><a class="nav-link" aria-label="it goes to movies section" href="#movies">movies</a></li>
+				<li><a class="nav-link" aria-label="it goes to tv shows section" href="#tv">TV shows</a></li>
+				<li><a class="nav-link" aria-label="it goes to recently added section" href="#new">recently added</a></li>
+				<li><a class="nav-link" aria-label="it goes to your favorites section" href="#favorites">my favorites</a></li>
 			</ul>
+			<label for="check" class="hide-menu"><i aria-hidden="true" class="fas fa-times"
+					title="cross to close menu"></i></label>
+		</nav>
+		<div class="navigation-wrapper"></div>
+		<ul class="icons">
+			<li>
+				<form class="search-box"><input type="search" placeholder="Search..." class="search-bar"
+						aria-label="search bar">
+			</li>
+			</form>
+			<li><a class="nav-link" href="#" aria-label="home link. user settings not active."><i aria-hidden="true"
+						class="fas fa-user-cog" title="user settings icon"></i></a></li>
+		</ul>
+	</div>
+
+<!-- HEADER -->
+	<header class="header">
+		<div class="movie-info">
+			<h1><span>Interstellar</span></h1><span class="sinopsis">"A team of explorers travel through a wormhole
+				in space in an attempt to ensure humanity's survival."
+			</span>
+			<div class="buttons">
+				<button><span class="button-description">Play</span><i aria-hidden="true" class="icon fas fa-play-circle fa-lg"
+						title="play icon"></i></button>
+				<button><span class="button-description">Add to favorites</span><i aria-hidden="true"
+						class="icon far fa-heart fa-lg" title="heart icon"></i></button>
+				<a href="/detailed-card.html"><button><span class="button-description">More info</span><i aria-hidden="true"
+							class="icon fas fa-info-circle fa-lg" title="more info icon"></i></button></a>
+			</div>
 		</div>
+	</header>
 
-		<!-- HEADER -->
-		<header class="header">
-			<div class="movie-info">
-				<h1><span>Interstellar</span></h1><span class="sinopsis">"A team of explorers travel through a wormhole
-					in space in an attempt to ensure humanity's survival."
-				</span>
-				<div class="buttons">
-					<button><span class="button-description">Play</span><i aria-hidden="true" class="icon fas fa-play-circle fa-lg" title="play icon"></i></button>
-					<button><span class="button-description">Add to favorites</span><i aria-hidden="true"
-							class="icon far fa-heart fa-lg" title="heart icon"></i></button>
-					<a href="/detailed-card.html"><button><span class="button-description">More info</span><i aria-hidden="true"
-								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></button></a>
+	<section class="content-section">
+<!-- MOVIES SECTION -->
+		<div class="carousel" id="movies">
+			<h2>Movies</h2>
+		</div>
+		<div class="movie-container">
+			<div class="rec-card">
+				<div class="movie-rec"><img class="movie-picture" alt="The Martian"
+						src="https://image.tmdb.org/t/p/w250_and_h141_face/sy3e2e4JwdAtd2oZGA2uUilZe8j.jpg">
+					<div class="play">
+						<div class="title">
+							<h2>The Martian</h2> (2015) <span class="rating" aria-label="star">⭐️ <span>8</span>/10 </span>
+						</div>
+						<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+						<a href="/detailed-card.html"><i aria-hidden="true" class="icon fas fa-info-circle fa-lg"
+								title="more info icon"></i></a>
+						<div class="tag-line">Bring Him Home
+						</div>
+					</div>
 				</div>
 			</div>
-		</header>
+			<div class="rec-card">
+				<div class="movie-rec"><img class="movie-picture" alt="Gravity"
+						src="https://image.tmdb.org/t/p/w250_and_h141_face/9aoWzwOwy9NLuSk9LkBwwrBdPYM.jpg">
+					<div class="play">
+						<div class="title">
+							<h2>Gravity</h2> (2013)<span class="rating" aria-label="star">⭐️ <span>7'7</span>/10 </span>
+						</div>
+						<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+						<a href="/detailed-card.html"><i aria-hidden="true" class="icon fas fa-info-circle fa-lg"
+								title="more info icon"></i></a>
+						<div class="tag-line">Don't Let Go
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rec-card">
+				<div class="movie-rec"><img class="movie-picture" alt="Edge of Tomorrow"
+						src="https://image.tmdb.org/t/p/w250_and_h141_face/7mgKeg18Qml5nJQa56RBZO7dIu0.jpg">
+					<div class="play">
+						<div class="title">
+							<h2>Edge of Tomorrow</h2> (2014) <span class="rating" aria-label="star">⭐️ <span>7'9</span>/10 </span>
+						</div>
+						<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+						<a href="/detailed-card.html"><i aria-hidden="true" class="icon fas fa-info-circle fa-lg"
+								title="more info icon"></i></a>
+						<div class="tag-line">Live, Die, Repeat
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rec-card">
+				<div class="movie-rec"><img class="movie-picture" alt="Ex Machina"
+						src="https://image.tmdb.org/t/p/w250_and_h141_face/9X3cDZb4GYGQeOnZHLwMcCFz2Ro.jpg">
+					<div class="play">
+						<div class="title">
+							<h2>Ex Machina</h2> (2015) <span class="rating" aria-label="star">⭐️ <span>7'7</span>/10 </span>
+						</div>
+						<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+						<a href="/detailed-card.html"><i aria-hidden="true" class="icon fas fa-info-circle fa-lg"
+								title="more info icon"></i></a>
+						<div class="tag-line-long">There is nothing more human than the will to survive
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
 
-		<!-- CAROUSEL GRID SECTION (to do) -->
-		<section class="content-section">
-			<div class="carousel" id="movies">
-				<h2>Movies</h2>
-			</div>
-			<div class="movie-container">
-				<div class="rec-card">
-					<div class="movie-rec"><img class="movie-picture" alt="The Martian"
-							src="https://image.tmdb.org/t/p/w250_and_h141_face/sy3e2e4JwdAtd2oZGA2uUilZe8j.jpg">
-						<div class="play">
-							<div class="title">
-								<h2>The Martian</h2> (2015) <span class="rating" aria-label="star">⭐️ <span>8</span>/10 </span>
-							</div>
-							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
-							<a href="/detailed-card.html"><i aria-hidden="true"
-								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
-							<div class="tag-line">Bring Him Home
-							</div>
+<!-- TV SHOWS SECTION -->
+		<div class="carousel" id="tv">
+			<h2>TV Shows</h2>
+		</div>
+		<div class="movie-container">
+			<div class="rec-card">
+				<div class="movie-rec"><img class="movie-picture" alt="The Sopranos"
+						src="https://image.tmdb.org/t/p/w250_and_h141_face/8GZ91vtbYOMp05qruAGPezWC0Ja.jpg">
+					<div class="play">
+						<div class="title">
+							<h2>The Sopranos</h2> (1999-2007) <span class="rating" aria-label="star">⭐️ <span>9'2</span>/10 </span>
 						</div>
-					</div>
-				</div>
-				<div class="rec-card">
-					<div class="movie-rec"><img class="movie-picture" alt="Gravity"
-							src="https://image.tmdb.org/t/p/w250_and_h141_face/9aoWzwOwy9NLuSk9LkBwwrBdPYM.jpg">
-						<div class="play">
-							<div class="title">
-								<h2>Gravity</h2> (2013)<span class="rating" aria-label="star">⭐️ <span>7'7</span>/10 </span>
-							</div>
-							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
-							<a href="/detailed-card.html"><i aria-hidden="true"
-								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
-							<div class="tag-line">Don't Let Go
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="rec-card">
-					<div class="movie-rec"><img class="movie-picture" alt="Edge of Tomorrow"
-							src="https://image.tmdb.org/t/p/w250_and_h141_face/7mgKeg18Qml5nJQa56RBZO7dIu0.jpg">
-						<div class="play">
-							<div class="title">
-								<h2>Edge of Tomorrow</h2> (2014) <span class="rating" aria-label="star">⭐️ <span>7'9</span>/10 </span>
-							</div>
-							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
-							<a href="/detailed-card.html"><i aria-hidden="true"
-								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
-							<div class="tag-line">Live, Die, Repeat
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="rec-card">
-					<div class="movie-rec"><img class="movie-picture" alt="Ex Machina"
-							src="https://image.tmdb.org/t/p/w250_and_h141_face/9X3cDZb4GYGQeOnZHLwMcCFz2Ro.jpg">
-						<div class="play">
-							<div class="title">
-								<h2>Ex Machina</h2> (2015) <span class="rating" aria-label="star">⭐️ <span>7'7</span>/10 </span>
-							</div>
-							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
-							<a href="/detailed-card.html"><i aria-hidden="true"
-								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
-							<div class="tag-line-long">There is nothing more human than the will to survive
-							</div>
+						<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+						<a href="/detailed-card.html"><i aria-hidden="true" class="icon fas fa-info-circle fa-lg"
+								title="more info icon"></i></a>
+						<div class="tag-line-long">Mob boss Tony Soprano deals with personal and professional issues in his home and
+							business life
 						</div>
 					</div>
 				</div>
 			</div>
-<hr>
-			<div class="carousel" id="tv">
-				<h2>TV Shows</h2>
-			</div>
-			<div class="movie-container">
-				<div class="rec-card">
-					<div class="movie-rec"><img class="movie-picture" alt="The Sopranos"
-							src="https://image.tmdb.org/t/p/w250_and_h141_face/8GZ91vtbYOMp05qruAGPezWC0Ja.jpg">
-						<div class="play">
-							<div class="title">
-								<h2>The Sopranos</h2> (1999-2007) <span class="rating" aria-label="star">⭐️ <span>9'2</span>/10 </span>
-							</div>
-							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
-							<a href="/detailed-card.html"><i aria-hidden="true"
-								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
-							<div class="tag-line-long">Mob boss Tony Soprano deals with personal and professional issues in his home and business life 
-							</div>
+			<div class="rec-card">
+				<div class="movie-rec"><img class="movie-picture" alt="The Wire"
+						src="https://image.tmdb.org/t/p/w250_and_h141_face/aaNzIG6CweG9riEBKBZ39QZA61w.jpg">
+					<div class="play">
+						<div class="title">
+							<h2>The Wire</h2> (2002-2008) <span class="rating" aria-label="star">⭐️ <span>9'3</span>/10 </span>
 						</div>
-					</div>
-				</div>
-				<div class="rec-card">
-					<div class="movie-rec"><img class="movie-picture" alt="The Wire"
-							src="https://image.tmdb.org/t/p/w250_and_h141_face/aaNzIG6CweG9riEBKBZ39QZA61w.jpg">
-						<div class="play">
-							<div class="title">
-								<h2>The Wire</h2> (2002-2008) <span class="rating" aria-label="star">⭐️ <span>9'3</span>/10 </span>
-							</div>
-							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
-							<a href="/detailed-card.html"><i aria-hidden="true"
-								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
-							<div class="tag-line-long">The Baltimore drug scene seen through the eyes of drug dealers and law enforcement
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="rec-card">
-					<div class="movie-rec"><img class="movie-picture" alt="Six Feet Under"
-							src="https://image.tmdb.org/t/p/w250_and_h141_face/vwjX5iPsNZngn8Uj3mz51tvd6mA.jpg">
-						<div class="play">
-							<div class="title">
-								<h2>Six Feet Under</h2> (2001-2005) <span class="rating" aria-label="star">⭐️ <span>8'7</span>/10 </span>
-							</div>
-							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
-							<a href="/detailed-card.html"><i aria-hidden="true"
-								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
-							<div class="tag-line-long">A chronicle of the lives of a dysfunctional family who run an independent funeral home in LA
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="rec-card">
-					<div class="movie-rec"><img class="movie-picture" alt="True Detective"
-							src="https://image.tmdb.org/t/p/w250_and_h141_face/2Ahm0YjLNQKuzSf9LOkHrXk8qIE.jpg">
-						<div class="play">
-							<div class="title">
-								<h2>True Detective</h2> (2014-) <span class="rating" aria-label="star">⭐️ <span>9</span>/10 </span>
-							</div>
-							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
-							<a href="/detailed-card.html"><i aria-hidden="true"
-								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
-							<div class="tag-line-long">Seasonal anthology series of police investigations
-							</div>
+						<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+						<a href="/detailed-card.html"><i aria-hidden="true" class="icon fas fa-info-circle fa-lg"
+								title="more info icon"></i></a>
+						<div class="tag-line-long">The Baltimore drug scene seen through the eyes of drug dealers and law
+							enforcement
 						</div>
 					</div>
 				</div>
 			</div>
-			<hr>
-			<div class="carousel" id="new">
-				<h2>Recently added</h2>
+			<div class="rec-card">
+				<div class="movie-rec"><img class="movie-picture" alt="Six Feet Under"
+						src="https://image.tmdb.org/t/p/w250_and_h141_face/vwjX5iPsNZngn8Uj3mz51tvd6mA.jpg">
+					<div class="play">
+						<div class="title">
+							<h2>Six Feet Under</h2> (2001-2005) <span class="rating" aria-label="star">⭐️ <span>8'7</span>/10 </span>
+						</div>
+						<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+						<a href="/detailed-card.html"><i aria-hidden="true" class="icon fas fa-info-circle fa-lg"
+								title="more info icon"></i></a>
+						<div class="tag-line-long">A chronicle of the lives of a dysfunctional family who run an independent funeral
+							home in LA
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="movie-container">
-				<div class="rec-card">
-					<div class="movie-rec"><img class="movie-picture" alt="His Dark Materials"
-							src="https://image.tmdb.org/t/p/w250_and_h141_face/9yKCJTOh9m3Lol2RY3kw99QPH6x.jpg
+			<div class="rec-card">
+				<div class="movie-rec"><img class="movie-picture" alt="True Detective"
+						src="https://image.tmdb.org/t/p/w250_and_h141_face/2Ahm0YjLNQKuzSf9LOkHrXk8qIE.jpg">
+					<div class="play">
+						<div class="title">
+							<h2>True Detective</h2> (2014-) <span class="rating" aria-label="star">⭐️ <span>9</span>/10 </span>
+						</div>
+						<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+						<a href="/detailed-card.html"><i aria-hidden="true" class="icon fas fa-info-circle fa-lg"
+								title="more info icon"></i></a>
+						<div class="tag-line-long">Seasonal anthology series of police investigations
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+
+<!-- RECENTLY ADDED SECTION -->
+		<div class="carousel" id="new">
+			<h2>Recently added</h2>
+		</div>
+		<div class="movie-container">
+			<div class="rec-card">
+				<div class="movie-rec"><img class="movie-picture" alt="His Dark Materials" src="https://image.tmdb.org/t/p/w250_and_h141_face/9yKCJTOh9m3Lol2RY3kw99QPH6x.jpg
 							">
-						<div class="play">
-							<div class="title">
-								<h2>His Dark Materials</h2> (2019-) <span class="rating" aria-label="star">⭐️ <span>8'3</span>/10 </span>
-							</div>
-							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
-							<a href="/detailed-card.html"><i aria-hidden="true"
-								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
-							<div class="tag-line-long">Two children embark on a magical adventure through parallel universes. 
-							</div>
+					<div class="play">
+						<div class="title">
+							<h2>His Dark Materials</h2> (2019-) <span class="rating" aria-label="star">⭐️ <span>8'3</span>/10 </span>
 						</div>
-					</div>
-				</div>
-				<div class="rec-card">
-					<div class="movie-rec"><img class="movie-picture" alt="El Camino: Breaking Bad"
-							src="https://image.tmdb.org/t/p/w250_and_h141_face/ijiE9WoGSwSzM16zTxvUneJ8RXc.jpg">
-						<div class="play">
-							<div class="title">
-								<h2>El Camino</h2> (2019) <span class="rating" aria-label="star">⭐️ <span>7'4</span>/10 </span>
-							</div>
-							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
-							<a href="/detailed-card.html"><i aria-hidden="true"
-								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
-							<div class="tag-line-long">El Camino follows fugitive Jesse Pinkman as he runs from his captors, the law and his past.
-
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="rec-card">
-					<div class="movie-rec"><img class="movie-picture" alt="The Mandalorian"
-							src="https://image.tmdb.org/t/p/w250_and_h141_face/o7qi2v4uWQ8bZ1tW3KI0Ztn2epk.jpg">
-						<div class="play">
-							<div class="title">
-								<h2>The Mandalorian</h2> (2019-) <span class="rating" aria-label="star">⭐️ <span>9'1</span>/10 </span>
-							</div>
-							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
-							<a href="/detailed-card.html"><i aria-hidden="true"
-								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
-							<div class="tag-line-long">The travails of a lone bounty hunter in the outer reaches of the galaxy, far from the authority of the New Republic.
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="rec-card">
-					<div class="movie-rec"><img class="movie-picture" alt="Roma"
-							src="https://image.tmdb.org/t/p/w250_and_h141_face/zl9uqCl5iUSb50sTk2BPzw6bJnU.jpg">
-						<div class="play">
-							<div class="title">
-								<h2>Roma</h2> (2018) <span class="rating" aria-label="star">⭐️ <span>7'7</span>/10 </span>
-							</div>
-							<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
-							<a href="/detailed-card.html"><i aria-hidden="true"
-								class="icon fas fa-info-circle fa-lg" title="more info icon"></i></a>
-							<div class="tag-line-long">A year in the life of a middle-class family's maid in Mexico City in the early 1970s.
-
-							</div>
+						<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+						<a href="/detailed-card.html"><i aria-hidden="true" class="icon fas fa-info-circle fa-lg"
+								title="more info icon"></i></a>
+						<div class="tag-line-long">Two children embark on a magical adventure through parallel universes.
 						</div>
 					</div>
 				</div>
 			</div>
-			<hr>
-			<div class="carousel" id="favorites">
-				<h2>My favorites</h2><span>
-					<p>Oops! You don't have any favorites yet.</p>
-				</span>
+			<div class="rec-card">
+				<div class="movie-rec"><img class="movie-picture" alt="El Camino: Breaking Bad"
+						src="https://image.tmdb.org/t/p/w250_and_h141_face/ijiE9WoGSwSzM16zTxvUneJ8RXc.jpg">
+					<div class="play">
+						<div class="title">
+							<h2>El Camino</h2> (2019) <span class="rating" aria-label="star">⭐️ <span>7'4</span>/10 </span>
+						</div>
+						<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+						<a href="/detailed-card.html"><i aria-hidden="true" class="icon fas fa-info-circle fa-lg"
+								title="more info icon"></i></a>
+						<div class="tag-line-long">El Camino follows fugitive Jesse Pinkman as he runs from his captors, the law and
+							his past.
+						</div>
+					</div>
+				</div>
 			</div>
-		</section>
+			<div class="rec-card">
+				<div class="movie-rec"><img class="movie-picture" alt="The Mandalorian"
+						src="https://image.tmdb.org/t/p/w250_and_h141_face/o7qi2v4uWQ8bZ1tW3KI0Ztn2epk.jpg">
+					<div class="play">
+						<div class="title">
+							<h2>The Mandalorian</h2> (2019-) <span class="rating" aria-label="star">⭐️ <span>9'1</span>/10 </span>
+						</div>
+						<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+						<a href="/detailed-card.html"><i aria-hidden="true" class="icon fas fa-info-circle fa-lg"
+								title="more info icon"></i></a>
+						<div class="tag-line-long">The travails of a lone bounty hunter in the outer reaches of the galaxy, far from
+							the authority of the New Republic.
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rec-card">
+				<div class="movie-rec"><img class="movie-picture" alt="Roma"
+						src="https://image.tmdb.org/t/p/w250_and_h141_face/zl9uqCl5iUSb50sTk2BPzw6bJnU.jpg">
+					<div class="play">
+						<div class="title">
+							<h2>Roma</h2> (2018) <span class="rating" aria-label="star">⭐️ <span>7'7</span>/10 </span>
+						</div>
+						<i aria-hidden="true" class="play-icon fas fa-play-circle fa-lg" title="play icon"></i>
+						<a href="/detailed-card.html"><i aria-hidden="true" class="icon fas fa-info-circle fa-lg"
+								title="more info icon"></i></a>
+						<div class="tag-line-long">A year in the life of a middle-class family's maid in Mexico City in the early
+							1970s.
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<hr>
+		
+<!-- FAVORITES SECTION -->		
+		<div class="carousel" id="favorites">
+			<h2>My favorites</h2><span>
+				<p>Oops! You don't have any favorites yet.</p>
+			</span>
+		</div>
+	</section>
 
-		<!-- Footer -->
-		<footer>
-			<div class="footer">
-				<p>Gema S. | 2019</p>
-				<a href="mailto:gema.segb@gmail.com" aria-label="Email"><i class="social-icon fas fa-envelope  fa-lg"></i></a>
-				<a href="https://github.com/gemasegarra" target="_blank" rel="noopener" aria-label="github"><i
-						class="social-icon fab fa-github  fa-lg"></i></a>
-				<a href="https://twitter.com/gemasega" target="_blank" rel="noopener" aria-label="twitter"><i
-						class="social-icon fab fa-twitter fa-lg"></i></a>
-			</div>
-		</footer>
-	</body>
+	<!-- Footer -->
+	<footer>
+		<div class="footer">
+			<p>Gema S. | 2019</p>
+			<a href="mailto:gema.segb@gmail.com" aria-label="Email"><i class="social-icon fas fa-envelope  fa-lg"></i></a>
+			<a href="https://github.com/gemasegarra" target="_blank" rel="noopener" aria-label="github"><i
+					class="social-icon fab fa-github  fa-lg"></i></a>
+			<a href="https://twitter.com/gemasega" target="_blank" rel="noopener" aria-label="twitter"><i
+					class="social-icon fab fa-twitter fa-lg"></i></a>
+		</div>
+	</footer>
+</body>
 </html>
