@@ -18,18 +18,6 @@
   position: relative;
 }
 
-.movie-container:hover .rec-card {
-  transform: translateX(3%);
-}
-
-.movie-container .rec-card:hover~.rec-card {
-  transform: translateX(-3%);
-}
-
-.movie-container .rec-card {
-  transition: transform 200ms ease 100ms;
-}
-
 .play {
   width: 250px;
   height: 141px;
