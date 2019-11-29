@@ -52,7 +52,7 @@ img {
 
 input[type="submit"] {
     border: 1px solid #1d4d4f;
-    background: #29a19c;
+    background: #185D59;
     outline: none;
     color: white;
     transition: 0.20s;
@@ -60,7 +60,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background: #1d4d4f;
+    background: #29a19c;
 }
 
 a {
@@ -78,7 +78,7 @@ a:hover {
 footer {
     text-align: center;
     padding: 40px;
-    color: rgba(255, 255, 255, 0.598);
+    color:#0A0A0A;
     font-size: 0.8rem;
 }
 
