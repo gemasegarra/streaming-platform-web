@@ -51,6 +51,8 @@ input.search-bar{
     color: white;
     border: none;
     outline: none;
+    -webkit-appearance:none;
+    ;
 }
 
 input.search-bar:focus {
@@ -152,8 +154,6 @@ input.search-bar:focus {
     }
     #check:checked ~ .container {
         right: 0;
-    }
-   
-   
+    }  
 }
 
