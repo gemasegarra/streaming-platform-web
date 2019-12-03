@@ -169,18 +169,6 @@ iframe {
     text-align: center;
 }
 
-.tag-line {
-    font-family: "Miriam Libre", sans-serif;
-    color: #6ba8a9;
-    letter-spacing: 0.1rem;
-}
-
-.tag-line-long {
-    font-family: "Miriam Libre", sans-serif;
-    color: #6ba8a9;
-}
-
-
 /* RESPONSIVE */
 @media screen and (min-width: 500px) {
     .synopsis-mobile {
